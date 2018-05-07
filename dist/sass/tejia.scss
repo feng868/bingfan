@@ -1,0 +1,338 @@
+@import "reset";
+@import "commond";
+.content {
+    width: 1200px;
+    margin: auto;
+}
+
+a {
+    color: #666;
+}
+
+.sp-list {
+    display: none;
+}
+
+.nav>ul>.list:hover .sp-list {
+    display: block;
+}
+
+#tj-warp {
+    background: #ededed;
+    overflow: hidden;
+}
+
+.tj-pic {
+    margin: 20px auto;
+    img {
+        float: left;
+    }
+    img:nth-child(1) {
+        margin-right: 12px;
+    }
+}
+
+//搜索条件
+.tj-list {}
+
+.tj-condition {
+    background: #fff;
+    ul {
+        overflow: hidden;
+        li {
+            float: left;
+        }
+        li:nth-child(1) {
+            float: left;
+            height: 45px;
+            line-height: 45px;
+            font-size: 18px;
+            background: #666;
+            text-align: center;
+            font-weight: bold;
+            width: 130px;
+            color: #fff;
+            border-right: 1px solid #e8e8e8;
+            margin-right: 10px;
+        }
+        li:nth-child(2) {
+            margin-top: 10px;
+            input:nth-child(1) {
+                height: 25px;
+                line-height: 25px;
+                vertical-align: top;
+                border: 1px solid #ccc;
+                padding: 2px;
+                box-sizing: border-box;
+            }
+            input:nth-child(2) {
+                margin-top: 5px;
+                margin-left: 5px;
+            }
+        }
+        li:nth-child(3) {
+            float: right;
+            line-height: 45px;
+            margin-right: 10px;
+        }
+    }
+}
+
+.tj-classify {
+    background: #fff;
+    ul {
+        overflow: hidden;
+        margin-top: 10px;
+        border-bottom: 1px solid #ccc;
+    }
+    li:hover {
+        background: #EB4300;
+        color: #fff;
+    }
+    li {
+        float: left;
+        width: 90px;
+        height: 20px;
+        box-sizing: border-box;
+        margin-right: 5px;
+        margin-top: 13px;
+        line-height: 20px;
+        padding-left: 10px;
+        font-size: 12px;
+    }
+    p {
+        float: left;
+        height: 45px;
+        line-height: 45px;
+        text-align: center;
+        width: 130px;
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+    }
+    .on {
+        background: #EB4300;
+        color: #fff;
+    }
+}
+
+.tj-merchant {
+    overflow: hidden;
+    background: #fff;
+    p {
+        float: left;
+        height: 45px;
+        line-height: 45px;
+        text-align: center;
+        width: 130px;
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+    }
+    div {
+        float: left;
+        width: 1070px;
+        margin-top: 5px;
+        a {
+            float: left;
+            width: 160px;
+            margin-right: 10px;
+            height: 20px;
+            box-sizing: border-box;
+            margin-top: 10px;
+            line-height: 20px;
+            padding-left: 10px;
+            font-size: 12px;
+            color: #999;
+            &:hover {
+                background: #EB4300;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.tj-shop {
+    margin-top: 20px;
+    ul {
+        overflow: hidden;
+    }
+    ul li {
+        //      height: 300px;
+        position: relative;
+        &:hover {
+            border: 1px solid #F54401;
+        }
+        &:hover .buy {
+            display: block;
+        }
+        &:hover .bytn-new span {
+            display: none;
+        }
+        float: left;
+        width: 290px;
+        position: relative;
+        padding: 14px;
+        border: 1px solid #fff;
+        color: #666;
+        background: #fff;
+        margin-right: 10px;
+        font-size: 13px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        h5 {
+            line-height: 18px;
+            height: 18px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: #000;
+            margin-top: 30px;
+            span {
+                line-height: 30px;
+                height: 30px;
+            }
+            a {
+                font-size: 14px;
+                color: #000;
+            }
+        }
+        h6 {
+            line-height: 30px;
+            height: 30px;
+            margin-top: 10px;
+            font-size: 14px;
+            overflow: hidden;
+            color: #EB4300;
+            margin-bottom: 0;
+            b {
+                font-size: 22px;
+                margin-left: 5px;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.discount {
+    position: absolute;
+    display: block;
+    float: left;
+    overflow: hidden;
+    width: 53px;
+    height: 51px;
+    background: url("../images/flag_cos.png") no-repeat;
+    z-index: 10;
+    top: -7px;
+    left: 8px;
+    div {
+        width: 53px;
+        height: 51px;
+        position: relative;
+        overflow: hidden;
+        line-height: 51px;
+        color: #fff;
+        font-weight: bold;
+        span {
+            width: 27px;
+            height: 51px;
+            line-height: 51px;
+            font-size: 36px;
+            position: absolute;
+            text-align: right;
+            left: 0;
+            top: 0;
+        }
+        i {
+            width: 26px;
+            height: 25px;
+            position: absolute;
+            top: 2px;
+            right: 0;
+            line-height: 30px;
+            color: #fff;
+            font-style: normal;
+            font-size: 15px;
+        }
+        em {
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            bottom: 4px;
+            right: 0;
+            line-height: 26px;
+            color: #fff;
+            font-weight: normal;
+            font-style: normal;
+        }
+    }
+}
+
+.distxt {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.bytn-new {
+    height: 35px;
+    margin-top: 5px;
+    span {}
+    .buy {
+        display: none;
+        height: 35px;
+        a {
+            display: block;
+            background: #eb4300;
+            color: #fff;
+            display: inline-block;
+            height: 35px;
+            width: 100%;
+            font-size: 14px;
+            line-height: 35px;
+            text-align: center;
+        }
+    }
+}
+
+.brandlogo {
+    img {
+        height: 200px;
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+}
+
+.photo>img {
+    float: right;
+    width: 56px;
+    height: 25px;
+}
+
+.aaa {
+    //  margin-top: 20px;
+    //  margin-left: 90px;
+}
+
+//分页
+#fenye-warp {
+    padding-top: 20px;
+}
+
+.fenye {
+    position: relative;
+    height: 40px;
+    div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width: 260px;
+    }
+}

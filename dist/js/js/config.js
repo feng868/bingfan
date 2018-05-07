@@ -1,0 +1,1 @@
+require({baseUrl:"../js/",paths:{jquery:"lib/jquery-1.11.3",layer:"plug/layui/layui",banner:"js/banner",details:"js/details",main:"js/main",timedbuy:"js/timedbuy",login:"js/login",cart:"js/cart",register:"js/register",tejia:"../js/js/tejia"}});
